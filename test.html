@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Freetuts.net - Menu Dropdow Use CSS & JQUERY</title>
+         
+        <script language="javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+         <!-- MENU sTYLES -->
+<link rel='stylesheet prefetch' href='https://cdn.rawgit.com/vadikom/smartmenus/0.9.6/src/css/sm-core-css.css'>
+<link rel='stylesheet prefetch' href='https://cdn.rawgit.com/vadikom/smartmenus/0.9.6/src/css/sm-blue/sm-blue.css'>
+<!-- JAVASCRIPTS -->
+<script src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+<script src='https://cdn.rawgit.com/vadikom/smartmenus/0.9.6/src/jquery.smartmenus.js'></script>
+      
+    </head>
+ 
+    <body>
+        <div id="nav">
+  <ul id="main-menu" class="sm sm-blue">
+    <li><a href="#"><span>Web68 Blog</span></a></li>
+    <li>
+      <a href="#">About</a>
+      <ul class="sub-menu">        
+        <li><a href="#"><span>The author</span></a></li>
+        <li>
+          <a href="#">The company</a>
+          <ul class="sub-menu">
+            <li><a href="#"><span>Who are we</span></a></li>
+            <li><a href="#"><span>What we do</span></a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#">Download</a></li>
+    <li>
+      <a href="#">Support</a>
+      <ul class="sub-menu">
+        <li><a href="#">Premium support</a></li>
+        <li><a href="#">Forums</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Blog</a></li>
+  </ul>  
+</div>
+
+$(function(){
+  $('#main-menu').smartmenus({
+            markCurrentItem: true,
+            subMenusSubOffsetX: 1,
+            subMenusSubOffsetY: -8
+        });
+});
+    </body>
+</html>
